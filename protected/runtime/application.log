@@ -8433,14 +8433,181 @@ REQUEST_URI=/PHP-Meeting_Room/index.php?r=booking/report
 in C:\xampp\htdocs\PHP-Meeting_Room\protected\views\booking\report.php (55)
 in C:\xampp\htdocs\PHP-Meeting_Room\protected\controllers\BookingController.php (97)
 in C:\xampp\htdocs\PHP-Meeting_Room\index.php (14)
-2017/02/21 23:02:49 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\php-source-management\protected\controllers\MemberController.php:20)
+2017/02/16 16:50:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'ระบบไม่สามารถดำเนินการ "ci" ตามคำสั่งได้' in C:\xampp\htdocs\php-source-management\framework\web\CController.php:483
 Stack trace:
-#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): MemberController->runAction()
-#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): MemberController->runActionWithFilters()
-#2 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): MemberController->run()
-#3 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
-#4 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
-#5 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
-REQUEST_URI=/php-source-management/index.php?r=Member/LoginCheck
-in C:\xampp\htdocs\php-source-management\protected\controllers\MemberController.php (20)
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(270): CController->missingAction('ci')
+#1 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): CController->run('ci')
+#2 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController('source/ci')
+#3 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\php-source-management\index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/php-source-management/index.php?r=source/ci
+HTTP_REFERER=http://localhost/php-source-management/index.php?r=system_setting/member_setting
+---
+2017/02/16 17:14:08 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(33): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source/co
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (36)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (33)
 in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:16:35 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(18): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionIndex()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (36)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (18)
+in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:16:41 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(33): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source/co
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (36)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (33)
+in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:21:52 [error] [exception.CException] exception 'CException' with message 'SiteController ไม่สามารถค้นหา "index" ตามคำสั่งได้' in C:\xampp\htdocs\php-source-management\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\php-source-management\protected\controllers\SiteController.php(37): CController->render('index')
+#2 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): CController->run('Index')
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Index')
+#8 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\php-source-management\index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/php-source-management/index.php?r=site/Index
+HTTP_REFERER=http://localhost/php-source-management/index.php
+---
+2017/02/16 17:26:02 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:58)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(33): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source/co
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (58)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (33)
+in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:26:35 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:58)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(33): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source/co
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (58)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (33)
+in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:27:23 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:58)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(34): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source/co
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (58)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (34)
+in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:27:31 [error] [php] Undefined variable: provider (C:\xampp\htdocs\php-source-management\protected\views\source\index.php:58)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(869): SourceController->renderFile()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): SourceController->renderPartial()
+#2 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(34): SourceController->render()
+#3 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): SourceController->runAction()
+#6 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): SourceController->runActionWithFilters()
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): SourceController->run()
+#8 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=source/co
+in C:\xampp\htdocs\php-source-management\protected\views\source\index.php (58)
+in C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php (34)
+in C:\xampp\htdocs\php-source-management\index.php (14)
+2017/02/16 17:29:27 [error] [exception.CException] exception 'CException' with message 'SourceController ไม่สามารถค้นหา "Source" ตามคำสั่งได้' in C:\xampp\htdocs\php-source-management\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): CController->renderPartial('Source', Array, true)
+#1 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(42): CController->render('Source', Array)
+#2 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#3 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): CController->run('co')
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController('source/co')
+#8 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\php-source-management\index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/php-source-management/index.php?r=source/co
+HTTP_REFERER=http://localhost/php-source-management/index.php?r=system_setting/member_setting
+---
+2017/02/16 17:29:31 [error] [exception.CException] exception 'CException' with message 'SourceController ไม่สามารถค้นหา "Source" ตามคำสั่งได้' in C:\xampp\htdocs\php-source-management\framework\web\CController.php:878
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(782): CController->renderPartial('Source', Array, true)
+#1 C:\xampp\htdocs\php-source-management\protected\controllers\SourceController.php(42): CController->render('Source', Array)
+#2 C:\xampp\htdocs\php-source-management\framework\web\actions\CInlineAction.php(49): SourceController->actionCo()
+#3 C:\xampp\htdocs\php-source-management\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): CController->run('co')
+#7 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController('source/co')
+#8 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\php-source-management\index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/php-source-management/index.php?r=source/co
+HTTP_REFERER=http://localhost/php-source-management/index.php?r=system_setting/member_setting
+---

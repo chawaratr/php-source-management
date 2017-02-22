@@ -203,6 +203,22 @@
                                 <li><a href="index.php?r=system_setting/member_setting"><i class="fa fa-circle-o text-yellow"></i> ผู้ใช้งานในระบบ</a></li>
                             </ul>
                         </li>
+                        
+                        
+                        <li class="treeview <?php
+                        if ($this->id == 'source')
+                        {
+                            echo "active";
+                        }
+                        ?>">
+                            <a href="#">
+                                <i class="fa fa-gears"></i> <span>Source control</span> <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="index.php?r=source/co"><i class="fa fa-circle-o text-yellow"></i>Checkout</a></li>
+                                <li><a href="index.php?r=source/ci"><i class="fa fa-circle-o text-yellow"></i>Checkin</a></li>
+                            </ul>
+                        </li>
 
                         <li><a href="index.php?r=Member/Logout"><i class="fa fa-power-off text-red"></i> <span>ออกจากระบบ</span></a></li>
 
