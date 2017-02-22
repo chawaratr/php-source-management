@@ -8433,3 +8433,14 @@ REQUEST_URI=/PHP-Meeting_Room/index.php?r=booking/report
 in C:\xampp\htdocs\PHP-Meeting_Room\protected\views\booking\report.php (55)
 in C:\xampp\htdocs\PHP-Meeting_Room\protected\controllers\BookingController.php (97)
 in C:\xampp\htdocs\PHP-Meeting_Room\index.php (14)
+2017/02/21 23:02:49 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\php-source-management\protected\controllers\MemberController.php:20)
+Stack trace:
+#0 C:\xampp\htdocs\php-source-management\framework\web\CController.php(286): MemberController->runAction()
+#1 C:\xampp\htdocs\php-source-management\framework\web\CController.php(265): MemberController->runActionWithFilters()
+#2 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(282): MemberController->run()
+#3 C:\xampp\htdocs\php-source-management\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\php-source-management\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\php-source-management\index.php(14): CWebApplication->run()
+REQUEST_URI=/php-source-management/index.php?r=Member/LoginCheck
+in C:\xampp\htdocs\php-source-management\protected\controllers\MemberController.php (20)
+in C:\xampp\htdocs\php-source-management\index.php (14)
